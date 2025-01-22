@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Gradiente de fundo */
+    background-size: 400% 400%; /* Para animação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: gradientAnimation 15s ease infinite; /* Animação de fundo */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo da calculadora com leve transparência */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+}
+
+.calculadora {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00796b; /* Azul escuro */
+}
+
+#resultado {
+    font-size: 32px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #f1f8e9; /* Fundo claro para o resultado */
+}
+
+table {
+    width: 100%;
+}
+
+.botao {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 2px 0; /* Reduzido para 2px */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adicionando animação de transformação */
+    background-color: #4fc3f7; /* Azul claro para os botões */
+    color: white; /* Texto branco */
+}
+
+.botao:hover {
+    background-color: #29b6f6; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+.botao:active {
+    background-color: #0288d1; /* Azul ainda mais escuro ao clicar */
+    transform: scale(0.95); /* Diminui o botão ao clicar */
+}
+
+/* Estilos específicos para os botões de operação */
+.botao:nth-child(3) { /* / */
+    background-color: #2196f3; /* Azul padrão */
+}
+
+.botao:nth-child(4) { /* X */
+    background-color: #2196f3; /* Azul padrão */
+}
+
+.botao:nth-child(8) { /* - */
+    background-color: #2196f3; /* Azul padrão */
+}
+
+.botao:nth-child(12) { /* + */
+    background-color: #2196f3; /* Azul padrão */
+}
+
+.botao:nth-child(16) { /* = */
+    background-color: #1976d2; /* Azul mais escuro */
+}
+
+.botao:nth-child(1) { /* C */
+    background-color: #030575; /* Vermelho para o botão C */
+}
+
+.botao:nth-child(2) { /* < */
+    background-color: #ffcc00; /* Amarelo para o botão < */
+}
+
+.botao:nth-child(17) { /* 0 */
+    background-color: #4fc3f7; /* Azul claro */
+}
+
+.botao:nth-child(18) { /* , */
+    background-color: #4fc3f7; /* Azul claro */
+}
+
